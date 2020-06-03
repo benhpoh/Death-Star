@@ -1,0 +1,29 @@
+<section class="main_window">
+    <div>
+        
+        <img src="<%=planet["image_url"]%>">
+
+    </div>
+
+    <div>
+        <form action="/planet" method="post">
+        <input type="hidden" name="_method" value="patch">
+        <input type="hidden" name="id" value="<%=planet["id"]%>">
+
+        <label>Planet name:</label> 
+        <input type="text" name="name" value="<%=planet["name"]%>"> <br>
+
+        <label>Distance from Core (light-years):</label> 
+        <input type="text" name="distance" value="<%=planet["distance"]%>"> <br>
+
+        <label>Number of moons:</label> 
+        <input type="text" name="moon_count" value="<%=planet["moon_count"]%>"> <br>
+
+        <label>Planet image:</label> 
+        <input type="text" name="image_url" value="<%=planet["image_url"]%>"> <br>
+
+        <button>Update Information</button>
+        
+        </form>
+    </div>
+</section>

@@ -1,0 +1,21 @@
+<section class="main_window">
+    <div>
+        <img src="<%=planet["image_url"]%>">
+    </div>
+
+    <div>
+        <h1><%=planet["name"]%></h1>
+        <p><h3>Moons:</h3> <%=planet["moon_count"]%></p>
+        <p><h3>Distance from Core:</h3> <%=planet["distance"][0..-4]+','+planet["distance"][-3..-1]%> light-years</p>
+
+        <form action="/planet" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="hidden" name="id" value="<%=planet["id"]%>">
+        <input type="hidden" name="name" value="<%=planet["name"]%>">
+        <button>FIRE DEATH STAR</button>
+        </form>
+
+        <a href="/planet/update/<%=planet["id"]%>">Update information on <%=planet["name"]%>?</a>
+    </div>
+</section>
+<iframe src="https://open.spotify.com/embed/track/2bw4WgXyXP90hIex7ur58y" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" class="player"></iframe>

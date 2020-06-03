@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Death Star 2.0</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1>Death Star 2.0</h1>
+    
+    <nav>
+      <a href="/">Available Planets</a>
+      <a href="/planet/new">Scan for New Planets</a>
+      <a href="/planet/update">Update Planet Details</a>
+    </nav>
+  </header>
+
+  <%= yield %>
+
+  <footer>
+    <%if logged_in?%>
+      <form action="/logout" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button>Power down</button>
+      </form>
+    <%end%>
+    <p>Death Star built by Ben | <a href="https://github.com/benhpoh">Github</a> | <a href="#">Portfolio</a></p>
+    
+  </footer>
+</body>
+</html>

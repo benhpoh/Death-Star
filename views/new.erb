@@ -1,0 +1,39 @@
+<section class="main_window">
+    <div>
+        
+        <h2>Searching for a new planet</h2>
+
+        <p>Planetary information can be obtained from the following location</p>
+
+        <p><a href="https://starwars.fandom.com/wiki/Category:Galactic_Empire_planets">Galactic Empire planets</a></p> 
+    </div>
+
+    <div>
+        <form action="/planet/new/random" method="post">
+          <div>
+            <button>Scan for a random planet</button>
+          </div>
+        </form>
+
+        <form action="/planet/new" method="post">
+        
+        <label>Planet name:</label> 
+        <input type="text" name="name" placeholder="Coruscant"> <br>
+
+        <label>Planet diameter (km):</label> 
+        <input type="text" name="diameter" placeholder="9000"> <br>
+
+        <label>Distance from Core (light-years):</label> 
+        <input type="text" name="distance" placeholder="50000"> <br>
+
+        <label>Number of moons:</label> 
+        <input type="text" name="moon_count" placeholder="1"> <br>
+
+        <label>Planet image:</label> 
+        <input type="text" name="image_url" placeholder=".../Coruscant.png"> <br>
+
+        <button>Target specific planet</button>
+        
+        </form>
+    </div>
+</section>

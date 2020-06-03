@@ -1,0 +1,18 @@
+<section class="main_window">
+    <div>
+        
+        <h2>Select planet to update</h2>
+
+    </div>
+
+    <div class="planets">
+    <% planets.each do |planet| %>
+        <div>
+            <a href="/planet/<%= planet["id"]%>"> 
+                <img src="<%= planet["image_url"]%>">
+            </a> 
+            <h2><%= planet["name"]%></h2>
+        </div>
+    <% end %>
+    </div>
+</section>
