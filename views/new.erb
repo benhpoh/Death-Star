@@ -16,23 +16,26 @@
         </form>
 
         <form action="/planet/new" method="post">
-        
-        <label>Planet name:</label> 
-        <input type="text" name="name" placeholder="Coruscant"> <br>
+          <br>
+          <br>
+          <h2>Manual Override:</h2>
 
-        <label>Planet diameter (km):</label> 
-        <input type="text" name="diameter" placeholder="9000"> <br>
+          <label>Planet name:</label> 
+          <input required type="text" name="name" placeholder="Coruscant"> <br>
 
-        <label>Distance from Core (light-years):</label> 
-        <input type="text" name="distance" placeholder="50000"> <br>
+          <label>Planet diameter (km):</label> 
+          <input required type="text" name="diameter" placeholder="9000"> <br>
 
-        <label>Number of moons:</label> 
-        <input type="text" name="moon_count" placeholder="1"> <br>
+          <label>Distance from Core (light-years):</label> 
+          <input required type="text" name="distance" placeholder="50000"> <br>
 
-        <label>Planet image:</label> 
-        <input type="text" name="image_url" placeholder=".../Coruscant.png"> <br>
+          <label>Number of moons:</label> 
+          <input required type="text" name="moon_count" placeholder="1"> <br>
 
-        <button>Target specific planet</button>
+          <label>Planet image:</label> 
+          <input required type="text" name="image_url" placeholder=".../Coruscant.png"> <br>
+
+          <button>Target specific planet</button>
         
         </form>
     </div>
